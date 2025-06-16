@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Письмо для тебя</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Первый экран с котиком -->
+        <div class="screen" id="screen1">
+            <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Котик" class="cat">
+            <p class="message">Тебе пришло письмо!</p>
+            <button id="nextBtn" class="btn yes">Открыть!</button>
+        </div>
+
+        <!-- Второй экран с письмом -->
+        <div class="screen hidden" id="screen2">
+            <div class="letter">
+                <div class="stamp">Почта</div>
+                <div class="letter-content">
+                    <p>Дорогой друг,</p>
+                    <p>У меня есть важное сообщение для тебя!</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="openLetterBtn" class="btn yes">Открыть</button>
+                <button id="cancelBtn" class="btn no">Не открывать</button>
+            </div>
+        </div>
+
+        <!-- Третий экран с открыткой -->
+        <div class="screen hidden" id="screen3">
+            <div class="card">
+                <h2>Ты истинный талант!</h2>
+                <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="Котик с сердечками">
+                <p>Хочу, чтобы у тебя было всё хорошо.<br>Я буду делать всё, чтобы тебе было комфортно!</p>
+                <div class="hearts-container"></div>
+            </div>
+        </div>
+
+        <!-- Лапка кота -->
+        <div id="catPaw" class="hidden">
+            <img src="https://media.giphy.com/media/jpbnoe3UIa8TU8LM13/giphy.gif" alt="Кошачья лапка">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
